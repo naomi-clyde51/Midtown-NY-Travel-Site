@@ -1,8 +1,49 @@
 * {
     margin: 0;
     padding: 0;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
 }
 
-.header {
+body {
+    width: 100%;
+    background-color: rgb(88, 88, 88);
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.533);
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+}
+
+header {
+    width: 100%;
     background-image: url("./img/pexels-helenalopes-1862047.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    height: 70vh;
+}
+
+.heading {
+    padding-top: 100px;
+}
+
+header h1 {
+    font-size: 64px;
+}
+
+header h2 {
+    font-size: 36px;
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
 }
