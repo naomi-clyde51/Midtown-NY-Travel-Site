@@ -2,8 +2,6 @@
     margin: 0;
     padding: 0;
     text-align: center;
-    text-decoration: none;
-    list-style: none;
 }
 
 body {
@@ -13,21 +11,36 @@ body {
 
 nav {
     background-color: rgba(0, 0, 0, 0.533);
-    padding: 20px;
+    
 }
 
 nav ul {
     display: flex;
+    padding: 15px;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0px 35px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    transition: 0.125s;
+}
+
+nav ul li a:hover {
+    color: white;
 }
 
 header {
     width: 100%;
-    background-image: url("./img/pexels-helenalopes-1862047.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0, 0, 0, 0.6)), url("./img/pexels-helenalopes-1862047.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: white;
-    height: 70vh;
+    height: 100vh;
 }
 
 .heading {
@@ -42,8 +55,99 @@ header h2 {
     font-size: 36px;
 }
 
+header button {
+    border: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+main {
+    background-color: #ededed;
+}
+
+main h2, main h3 {
+    text-transform: capitalize;
+}
+
+section {
+padding-top: 25px;
+}
+
+.img-responsive {
+    max-width: 100%;
+}
+
+.grid-2-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 64px;
+}
+
+.grid-3-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 64px;
+}
+
+.grid-121-columns {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 64px;
+}
+
 footer {
     width: 100%;
+    margin: 0 auto;
+    padding: 100px;
     background-color: black;
     color: white;
+}
+
+footer li {
+list-style:none;
+margin: 0;
+padding: 0;
+}
+
+footer li a {
+    text-decoration: none;
+color: white;
+transition: 0.125s;
+}
+
+footer li a:hover {
+color: rgba(255, 255, 255, 0.645);
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.799);
+}
+
+@media screen and (max-width: 960px) {
+    header {
+            
+        }
+    
+        .heading {
+            
+        }
+    
+        header h1 {
+            font-size: 48px;
+        }
+    
+        header h2 {
+            font-size: 24px;
+        }
+    
+        button {
+            font-size: 8px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 64px;
+        }
 }
