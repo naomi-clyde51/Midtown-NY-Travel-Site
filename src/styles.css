@@ -55,6 +55,10 @@ header h2 {
     font-size: 36px;
 }
 
+header h3 {
+    text-transform: uppercase;
+}
+
 header button {
     border: none;
     margin-top: 20px;
@@ -71,7 +75,7 @@ main h2, main h3 {
 }
 
 section {
-padding-top: 25px;
+padding: 75px;
 }
 
 .img-responsive {
@@ -90,7 +94,7 @@ padding-top: 25px;
     grid-gap: 64px;
 }
 
-.grid-121-columns {
+.grid-3-columns-large-middle {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-gap: 64px;
@@ -102,6 +106,10 @@ footer {
     padding: 100px;
     background-color: black;
     color: white;
+}
+
+footer h3 {
+
 }
 
 footer li {
@@ -124,25 +132,66 @@ footer p {
     color: rgba(255, 255, 255, 0.799);
 }
 
-@media screen and (max-width: 960px) {
-    header {
-            
-        }
-    
-        .heading {
-            
+@media screen and (max-width: 1024px) {
+    .heading {
+            margin-top: 90px;
         }
     
         header h1 {
-            font-size: 48px;
+            font-size: 56px;
+            
+        }
+    
+        header h2 {
+            font-size: 36px;
+        }
+
+        header button {
+            font-size: 24px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: center;
+            grid-gap: 64px;
+        }
+}
+
+@media screen and (max-width: 820px) {
+    .heading {
+            margin-top: 80px;
+        }
+    
+        header h1 {
+            font-size: 42px;
+            
         }
     
         header h2 {
             font-size: 24px;
         }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: center;
+            grid-gap: 64px;
+        }
+}
+
+@media screen and (max-width: 480px) {
+    .heading {
+            margin-top: 80px;
+        }
     
-        button {
-            font-size: 8px;
+        header h1 {
+            font-size: 40px;
+            
+        }
+    
+        header h2 {
+            font-size: 22px;
         }
 
         .grid {
