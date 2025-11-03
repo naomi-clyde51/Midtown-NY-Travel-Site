@@ -35,7 +35,7 @@ nav ul li a:hover {
 
 header {
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0, 0, 0, 0.6)), url("./img/pexels-helenalopes-1862047.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0, 0, 0, 0.55)), url("./img/pexels-helenalopes-1862047.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -78,6 +78,12 @@ section {
 padding: 75px;
 }
 
+.title {
+    color:#9b9b9b;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
 .img-responsive {
     max-width: 100%;
 }
@@ -98,6 +104,19 @@ padding: 75px;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-gap: 64px;
+}
+
+.attractions {
+    border: 2px solid black
+}
+
+.card {
+    box-shadow: 5px 12px 35px rgb(88, 88, 88);
+}
+
+.card button {
+    margin: 5px 7px;
+    padding: 15px;
 }
 
 footer {
@@ -146,6 +165,10 @@ footer p {
             font-size: 36px;
         }
 
+        header h3 {
+            font-size: 24px;
+        }
+
         header button {
             font-size: 24px;
         }
@@ -172,6 +195,14 @@ footer p {
             font-size: 24px;
         }
 
+        header h3 {
+            font-size: 16px;
+        }
+
+        header button {
+            font-size: 24px;
+        }
+
         .grid {
             display: grid;
             grid-template-columns: 1fr;
@@ -186,12 +217,20 @@ footer p {
         }
     
         header h1 {
-            font-size: 40px;
+            font-size: 36px;
             
         }
     
         header h2 {
-            font-size: 22px;
+            font-size: 20px;
+        }
+
+        header h3 {
+            font-size: 18px;
+        }
+
+        header button {
+            font-size: 18px;
         }
 
         .grid {
